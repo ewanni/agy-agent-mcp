@@ -1,0 +1,49 @@
+{
+  "name": "agy-agent-mcp",
+  "version": "1.1.0",
+  "description": "Model Context Protocol (MCP) server for Antigravity (agy) CLI agent",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "agy-agent-mcp": "./dist/index.js",
+    "agy-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "node dist/index.js --help || true",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "antigravity",
+    "agy",
+    "agent",
+    "ai",
+    "cli",
+    "coding-agent"
+  ],
+  "author": "ewanni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ewanni/agy-agent-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
